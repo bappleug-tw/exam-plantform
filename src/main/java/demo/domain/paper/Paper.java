@@ -12,4 +12,8 @@ public class Paper {
     public List<String> getBlankQuizIds() {
         return blankQuizIds;
     }
+
+    public void update(List<String> updatedBlankQuizIds) {
+        blankQuizIds = updatedBlankQuizIds;
+    }
 }
