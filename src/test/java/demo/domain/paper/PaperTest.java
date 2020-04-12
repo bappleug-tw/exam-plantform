@@ -23,7 +23,7 @@ class PaperTest {
     void should_success_when_update_given_valid_quiz_ids() {
         List<String> initBlankQuizIds = new ArrayList<>();
         initBlankQuizIds.add("blank quiz 1");
-        Paper paper = new Paper(initBlankQuizIds);
+        Paper paper = new Paper(initBlankQuizIds, paperPolicy);
 
         List<String> updatedBlankQuizIds = new ArrayList<>();
         updatedBlankQuizIds.add("blank quiz 2");
@@ -36,7 +36,7 @@ class PaperTest {
     void should_throw_invalid_quiz_id_exception_when_update_given_invalid_quiz_ids() {
         List<String> initBlankQuizIds = new ArrayList<>();
         initBlankQuizIds.add("blank quiz 1");
-        Paper paper = new Paper(initBlankQuizIds);
+        Paper paper = new Paper(initBlankQuizIds, paperPolicy);
         List<String> invalidQuizIds = new ArrayList<>();
         invalidQuizIds.add("invalid blank quiz 1");
         invalidQuizIds.add("invalid blank quiz 2");

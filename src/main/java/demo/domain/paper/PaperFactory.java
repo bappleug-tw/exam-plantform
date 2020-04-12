@@ -12,6 +12,6 @@ public class PaperFactory {
 
     public Paper create(List<String> blankQuizIds) {
         paperPolicy.assertQuizIdsAreValid(blankQuizIds);
-        return new Paper(blankQuizIds);
+        return new Paper(blankQuizIds, paperPolicy);
     }
 }
