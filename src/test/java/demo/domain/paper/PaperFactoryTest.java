@@ -2,7 +2,6 @@ package demo.domain.paper;
 
 import demo.domain.paper.excaption.InvalidBlankQuizIdException;
 import demo.repository.QuizRepository;
-import org.junit.Before;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
