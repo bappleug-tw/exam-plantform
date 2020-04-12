@@ -34,8 +34,7 @@ class PaperPolicyTest {
     }
 
     @Test
-    void should_return_paper_when_create_given_invalid_quiz_ids() {
-        QuizRepository quizRepository = Mockito.mock(QuizRepository.class);
+    void should_throw_invalid_quiz_id_exception_paper_when_create_given_invalid_quiz_ids() {
         PaperPolicy paperPolicy = new PaperPolicy(quizRepository);
         doReturn(true).when(quizRepository).exists("invalid blank quiz 1");
         doReturn(false).when(quizRepository).exists("invalid blank quiz 2");

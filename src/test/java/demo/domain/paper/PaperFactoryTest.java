@@ -31,7 +31,7 @@ public class PaperFactoryTest {
     }
 
     @Test
-    void should_return_paper_when_create_given_invalid_quiz_ids() {
+    void should_throw_invalid_quiz_id_exception_when_create_given_invalid_quiz_ids() {
         List<String> blankQuizIds = new ArrayList<>();
         blankQuizIds.add("invalid blank quiz 1");
         blankQuizIds.add("invalid blank quiz 2");
