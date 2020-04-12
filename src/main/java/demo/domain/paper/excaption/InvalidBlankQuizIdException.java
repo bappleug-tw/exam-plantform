@@ -1,4 +1,4 @@
 package demo.domain.paper.excaption;
 
-public class InvalidBlankQuizIdException {
+public class InvalidBlankQuizIdException extends RuntimeException {
 }
